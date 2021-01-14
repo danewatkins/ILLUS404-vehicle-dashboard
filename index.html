@@ -46,14 +46,26 @@
 
     #button_2 {
       left: 370px;
+      background-image: url('images/button_up.png');
+    }
+    #button_2:active {
+    background-image: url('images/button_down.png');
     }
 
     #button_3 {
       left: 490px;
+      background-image: url('images/button_up.png');
+    }
+    #button_3:active {
+    background-image: url('images/button_down.png');
     }
 
     #button_4 {
       left: 610px;
+      background-image: url('images/button_up.png');
+    }
+    #button_4:active {
+    background-image: url('images/button_down.png');
     }
   </style>
 </head>
@@ -69,10 +81,10 @@
     <img id="layer_3_up" class="vehicle" src="images/layer_3_up.png">
     <img id="layer_4_up" class="vehicle" src="images/layer_4_up.png">
     <img src="images/dashboard.png">
-    <div id="button_1" class="buttons"  onmousedown="button_1()" onmouseup="button_1_down()" ontouchstart="button_1()" ontouchend="button_1_down()"></div>
-    <img id="button_2" class="buttons" src="images/button_up.png" onmousedown="button_2()" onmouseup="button_2_down()" ontouchstart="button_2()" ontouchend="button_2_down()">
-    <img id="button_3" class="buttons" src="images/button_up.png" onmousedown="button_3()" onmouseup="button_3_down()" ontouchstart="button_3()" ontouchend="button_3_down()">
-    <img id="button_4" class="buttons" src="images/button_up.png" onmousedown="button_4()" onmouseup="button_4_down()" ontouchstart="button_4()" ontouchend="button_4_down()">
+    <div id="button_1" class="buttons" onmousedown="button_1()" onmouseup="button_1_down()" ontouchstart="button_1()" ontouchend="button_1_down()"></div>
+    <div id="button_2" class="buttons" onmousedown="button_2()" onmouseup="button_2_down()" ontouchstart="button_2()" ontouchend="button_2_down()"></div>
+    <div id="button_3" class="buttons" onmousedown="button_3()" onmouseup="button_3_down()" ontouchstart="button_3()" ontouchend="button_3_down()"></div>
+    <div id="button_4" class="buttons" onmousedown="button_4()" onmouseup="button_4_down()" ontouchstart="button_4()" ontouchend="button_4_down()"></div>
   </div>
 </body>
 <script>
@@ -82,22 +94,18 @@
 
   function button_1_down() {
     document.getElementById('layer_1_up').src = 'images/layer_1_up.png';
-    document.getElementById('button_1').src = 'images/button_up.png';
   }
 
   function button_2() {
     document.getElementById('layer_2_up').src = 'images/layer_2_down.png';
-    document.getElementById('button_2').src = 'images/button_down.png';
   }
 
   function button_2_down() {
     document.getElementById('layer_2_up').src = 'images/layer_2_up.png';
-    document.getElementById('button_2').src = 'images/button_up.png';
   }
 
   function button_3() {
     document.getElementById('layer_3_up').src = 'images/layer_3_down.png';
-    document.getElementById('button_3').src = 'images/button_down.png';
   }
 
   function button_3_down() {
