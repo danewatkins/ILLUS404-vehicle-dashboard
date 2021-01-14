@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=320">
+  <style>
+    #header {
+      font-weight: bold;
+      font-size: large;
+    }
+    body {
+      background-color: #cc9966;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .center {
+      position: relative;
+      margin: auto;
+      width: 800px;
+    }
+    img {
+      position: absolute;
+      top: 30px;
+      left: 0px;
+      width: 100%;
+    }
+    .vehicle{
+      top:167px;
+    }
+    .buttons {
+      position: absolute;
+      background-color: purple1;
+      /* opacity: 50%; */
+      cursor: pointer;
+      width: 114px;
+      height: 122px;
+      top: 50px;
+    }
+
+    #button_1 {
+      left: 250px;
+      background-image: url('images/button_up.png');
+    }
+    #button_1:active {
+    background-image: url('images/button_down.png');
+}
+
+    #button_2 {
+      left: 370px;
+    }
+
+    #button_3 {
+      left: 490px;
+    }
+
+    #button_4 {
+      left: 610px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <h2></h2>
+    <p><span id="header">Vehicle Dashboard</span> Click a button to find out more.</p>
+
+    <img class="vehicle" src="images/background.png">
+    <img id="layer_1_up" class="vehicle" src="images/layer_1_up.png">
+    <img id="layer_2_up" class="vehicle" src="images/layer_2_up.png">
+    <img id="layer_3_up" class="vehicle" src="images/layer_3_up.png">
+    <img id="layer_4_up" class="vehicle" src="images/layer_4_up.png">
+    <img src="images/dashboard.png">
+    <div id="button_1" class="buttons"  onmousedown="button_1()" onmouseup="button_1_down()" ontouchstart="button_1()" ontouchend="button_1_down()"></div>
+    <img id="button_2" class="buttons" src="images/button_up.png" onmousedown="button_2()" onmouseup="button_2_down()" ontouchstart="button_2()" ontouchend="button_2_down()">
+    <img id="button_3" class="buttons" src="images/button_up.png" onmousedown="button_3()" onmouseup="button_3_down()" ontouchstart="button_3()" ontouchend="button_3_down()">
+    <img id="button_4" class="buttons" src="images/button_up.png" onmousedown="button_4()" onmouseup="button_4_down()" ontouchstart="button_4()" ontouchend="button_4_down()">
+  </div>
+</body>
+<script>
+  function button_1() {
+    document.getElementById('layer_1_up').src = 'images/layer_1_down.png';
+  }
+
+  function button_1_down() {
+    document.getElementById('layer_1_up').src = 'images/layer_1_up.png';
+    document.getElementById('button_1').src = 'images/button_up.png';
+  }
+
+  function button_2() {
+    document.getElementById('layer_2_up').src = 'images/layer_2_down.png';
+    document.getElementById('button_2').src = 'images/button_down.png';
+  }
+
+  function button_2_down() {
+    document.getElementById('layer_2_up').src = 'images/layer_2_up.png';
+    document.getElementById('button_2').src = 'images/button_up.png';
+  }
+
+  function button_3() {
+    document.getElementById('layer_3_up').src = 'images/layer_3_down.png';
+    document.getElementById('button_3').src = 'images/button_down.png';
+  }
+
+  function button_3_down() {
+    document.getElementById('layer_3_up').src = 'images/layer_3_up.png';
+    document.getElementById('button_3').src = 'images/button_up.png';
+  }
+
+  function button_4() {
+    document.getElementById('layer_4_up').src = 'images/layer_4_down.png';
+    document.getElementById('button_4').src = 'images/button_down.png';
+  }
+
+  function button_4_down() {
+    document.getElementById('layer_4_up').src = 'images/layer_4_up.png';
+    document.getElementById('button_4').src = 'images/button_up.png';
+  }
+</script>
+
+</html>
