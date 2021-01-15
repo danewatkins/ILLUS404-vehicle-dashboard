@@ -97,21 +97,23 @@
   </style>
 </head>
 
-<body>
+<body onmousedown="hide_info()" ontouchstart="hide_info()">
   <div class="center">
-    <h2></h2>
-    <p><span id="header">Vehicle Dashboard</span> Click a button to find out more.</p>
 
     <img class="vehicle" src="images/background.png">
     <img id="layer_1_up" class="vehicle" src="images/layer_1_up.png">
     <img id="layer_2_up" class="vehicle" src="images/layer_2_up.png">
     <img id="layer_3_up" class="vehicle" src="images/layer_3_up.png">
     <img id="layer_4_up" class="vehicle" src="images/layer_4_up.png">
+
+
     <img src="images/dashboard.png">
     <div id="button_1" class="buttons" onmousedown="button_1()" onmouseup="button_1_down()" ontouchstart="button_1()" ontouchend="button_1_down()"></div>
     <div id="button_2" class="buttons" onmousedown="button_2()" onmouseup="button_2_down()" ontouchstart="button_2()" ontouchend="button_2_down()"></div>
     <div id="button_3" class="buttons" onmousedown="button_3()" onmouseup="button_3_down()" ontouchstart="button_3()" ontouchend="button_3_down()"></div>
     <div id="button_4" class="buttons" onmousedown="button_4()" onmouseup="button_4_down()" ontouchstart="button_4()" ontouchend="button_4_down()"></div>
+    <img id="info" class="vehicle" src="images/info.png">
+    <p><span id="header">Vehicle Dashboard</span> by D  ane Watkins.</p>
   </div>
 </body>
 <script>
@@ -132,23 +134,24 @@
   }
 
   function button_3() {
-    document.getElementById('layer_3_up').src = 'images/layer_3_down.png';
+    document.getElementById('layer_3_up').src = 'images/layer_3_down.gif';
   }
 
   function button_3_down() {
     document.getElementById('layer_3_up').src = 'images/layer_3_up.png';
-    document.getElementById('button_3').src = 'images/button_up.png';
   }
 
   function button_4() {
     document.getElementById('layer_4_up').src = 'images/layer_4_down.png';
-    document.getElementById('button_4').src = 'images/button_down.png';
   }
 
   function button_4_down() {
     document.getElementById('layer_4_up').src = 'images/layer_4_up.png';
-    document.getElementById('button_4').src = 'images/button_up.png';
   }
+  function hide_info() {
+    document.getElementById('info').style.display='none';
+  }
+
 </script>
 
 </html>
