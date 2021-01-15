@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html>
+<script type="text/javascript">
+  // INSERT YOUR NAME
+  var name = "Dane Watkins";
+</script>
 
+<html>
 <head>
   <meta name="viewport" content="width=320">
   <style>
@@ -113,10 +116,12 @@
     <div id="button_3" class="buttons" onmousedown="button_3()" onmouseup="button_3_down()" ontouchstart="button_3()" ontouchend="button_3_down()"></div>
     <div id="button_4" class="buttons" onmousedown="button_4()" onmouseup="button_4_down()" ontouchstart="button_4()" ontouchend="button_4_down()"></div>
     <img id="info" class="vehicle" src="images/info.png">
-    <p><span id="header">Vehicle Dashboard</span> by Dane Watkins</p>
+    <p><span id="header">Vehicle Dashboard</span> by <span id="myName"></span></p>
   </div>
 </body>
 <script>
+  document.getElementById('myName').innerHTML = name;
+
   function button_1() {
     document.getElementById('layer_1_up').src = 'images/layer_1_down.png';
   }
@@ -148,10 +153,10 @@
   function button_4_down() {
     document.getElementById('layer_4_up').src = 'images/layer_4_up.png';
   }
-  function hide_info() {
-    document.getElementById('info').style.display='none';
-  }
 
+  function hide_info() {
+    document.getElementById('info').style.display = 'none';
+  }
 </script>
 
 </html>
