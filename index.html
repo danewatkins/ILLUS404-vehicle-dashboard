@@ -1,9 +1,14 @@
 <script type="text/javascript">
+  //
   // INSERT YOUR NAME
-  var name = "Dane Watkins";
+  var name = "Dane Walllllllllkins";
+  //
+  //
+
 </script>
 
 <html>
+
 <head>
   <meta name="viewport" content="width=320">
   <style>
@@ -31,7 +36,7 @@
     }
 
     body {
-      background-color: #C5836A;
+      background-color: #C78463;
       font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -58,44 +63,44 @@
       /* opacity: 50%; */
       cursor: pointer;
       width: 114px;
-      height: 122px;
-      top: 50px;
+      height: 167px;
+      top: 30px;
     }
 
     #button_1 {
       left: 250px;
-      background-image: url('images/button_up.png');
+      background-image: url('images/button_up.gif');
     }
 
     #button_1:active {
-      background-image: url('images/button_down.png');
+      background-image: url('images/button_down.gif');
     }
 
     #button_2 {
       left: 370px;
-      background-image: url('images/button_up.png');
+      background-image: url('images/button_up.gif');
     }
 
     #button_2:active {
-      background-image: url('images/button_down.png');
+      background-image: url('images/button_down.gif');
     }
 
     #button_3 {
       left: 490px;
-      background-image: url('images/button_up.png');
+      background-image: url('images/button_up.gif');
     }
 
     #button_3:active {
-      background-image: url('images/button_down.png');
+      background-image: url('images/button_down.gif');
     }
 
     #button_4 {
       left: 610px;
-      background-image: url('images/button_up.png');
+      background-image: url('images/button_up.gif');
     }
 
     #button_4:active {
-      background-image: url('images/button_down.png');
+      background-image: url('images/button_down.gif');
     }
   </style>
 </head>
@@ -103,39 +108,40 @@
 <body onmousedown="hide_info()" ontouchstart="hide_info()">
   <div class="center">
 
-    <img class="vehicle" src="images/background.png">
-    <img id="layer_1_up" class="vehicle" src="images/layer_1_up.png">
-    <img id="layer_2_up" class="vehicle" src="images/layer_2_up.png">
-    <img id="layer_3_up" class="vehicle" src="images/layer_3_up.png">
-    <img id="layer_4_up" class="vehicle" src="images/layer_4_up.png">
+    <img class="vehicle" src="images/background.gif">
+    <img id="layer_1_up" class="vehicle" src="images/layer_1_up.gif">
+    <img id="layer_2_up" class="vehicle" src="images/layer_2_up.gif">
+    <img id="layer_3_up" class="vehicle" src="images/layer_3_up.gif">
+    <img id="layer_4_up" class="vehicle" src="images/layer_4_up.gif">
 
 
-    <img src="images/dashboard.png">
+    <img src="images/dashboard.gif">
     <div id="button_1" class="buttons" onmousedown="button_1()" onmouseup="button_1_down()" ontouchstart="button_1()" ontouchend="button_1_down()"></div>
     <div id="button_2" class="buttons" onmousedown="button_2()" onmouseup="button_2_down()" ontouchstart="button_2()" ontouchend="button_2_down()"></div>
     <div id="button_3" class="buttons" onmousedown="button_3()" onmouseup="button_3_down()" ontouchstart="button_3()" ontouchend="button_3_down()"></div>
     <div id="button_4" class="buttons" onmousedown="button_4()" onmouseup="button_4_down()" ontouchstart="button_4()" ontouchend="button_4_down()"></div>
-    <img id="info" class="vehicle" src="images/info.png">
-    <p><span id="header">Vehicle Dashboard</span> by <span id="myName"></span></p>
+    <img id="info" class="vehicle" src="images/info.gif">
+    <!-- <p><span id="header">Vehicle Dashboard</span> by <span id="myName"></span></p> -->
   </div>
 </body>
 <script>
   document.getElementById('myName').innerHTML = name;
 
-  function button_1() {
-    document.getElementById('layer_1_up').src = 'images/layer_1_down.png';
-  }
+
 
   function button_1_down() {
-    document.getElementById('layer_1_up').src = 'images/layer_1_up.png';
+    document.getElementById('layer_1_up').src = 'images/layer_1_up.gif';
+  }
+  function button_1() {
+    document.getElementById('layer_1_up').src = 'images/layer_1_down.gif';
   }
 
   function button_2() {
-    document.getElementById('layer_2_up').src = 'images/layer_2_down.png';
+    document.getElementById('layer_2_up').src = 'images/layer_2_down.gif';
   }
 
   function button_2_down() {
-    document.getElementById('layer_2_up').src = 'images/layer_2_up.png';
+    document.getElementById('layer_2_up').src = 'images/layer_2_up.gif';
   }
 
   function button_3() {
@@ -143,15 +149,15 @@
   }
 
   function button_3_down() {
-    document.getElementById('layer_3_up').src = 'images/layer_3_up.png';
+    document.getElementById('layer_3_up').src = 'images/layer_3_up.gif';
   }
 
   function button_4() {
-    document.getElementById('layer_4_up').src = 'images/layer_4_down.png';
+    document.getElementById('layer_4_up').src = 'images/layer_4_down.gif';
   }
 
   function button_4_down() {
-    document.getElementById('layer_4_up').src = 'images/layer_4_up.png';
+    document.getElementById('layer_4_up').src = 'images/layer_4_up.gif';
   }
 
   function hide_info() {
